@@ -28,9 +28,8 @@ const AllRecipes = () => {
 
   return (
     <section className="recipes-container">
-      
-      <TagsList recipes={recipes}/>
-      <RecipesList recipes={recipes}/>
+      <TagsList recipes={recipes} />
+      <RecipesList recipes={recipes} />
     </section>
   )
 }

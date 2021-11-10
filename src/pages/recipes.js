@@ -8,7 +8,7 @@ const Recipes = () => {
     <Layout>
       {/* <SEO title="Recipes" /> */}
       <main className="page">
-        recipes
+       
          <AllRecipes /> 
       </main>
     </Layout>

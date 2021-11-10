@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="nav-center">
         <div className="nav-header">
-          <Link to="/">logo</Link>
+          <Link to="/">easy to cook</Link>
           <button className="nav-btn" onClick={() => setShow(!show)}>
             <FiAlignJustify />
           </button>
