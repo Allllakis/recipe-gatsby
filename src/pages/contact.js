@@ -1,9 +1,13 @@
 import React from "react"
 import Layout from "../components/Layout"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import RecipesList from "../components/RecipesList"
 
-const Contact = ({data:{allContentfulRecipe:{nodes:recipes}}}) => {
+const Contact = ({
+  data: {
+    allContentfulRecipe: { nodes: recipes },
+  },
+}) => {
   return (
     <Layout>
       <main className="page">
@@ -21,7 +25,11 @@ const Contact = ({data:{allContentfulRecipe:{nodes:recipes}}}) => {
             </p>
           </article>
           <article>
-            <form className="form contact-form">
+            <form
+              className="form contact-form"
+              action="https://formspree.io/f/meqvyeeb"
+              method="POST"
+            >
               <div className="form-row">
                 <label htmlFor="name">your name</label>
                 <input type="text" name="name" id="name" />
@@ -32,9 +40,11 @@ const Contact = ({data:{allContentfulRecipe:{nodes:recipes}}}) => {
               </div>
               <div className="form-row">
                 <label htmlFor="massage">massage</label>
-                <textarea  name="massage" id="massage"  />
+                <textarea name="massage" id="massage" />
               </div>
-              <button type="submit" className="btn block">submit</button>
+              <button type="submit" className="btn block">
+                submit
+              </button>
             </form>
           </article>
         </section>
@@ -50,8 +60,8 @@ const Contact = ({data:{allContentfulRecipe:{nodes:recipes}}}) => {
 export const query = graphql`
   {
     allContentfulRecipe(
-      sort: {fields: title, order: ASC}
-      filter: {featured: {eq: true}}
+      sort: { fields: title, order: ASC }
+      filter: { featured: { eq: true } }
     ) {
       nodes {
         id
