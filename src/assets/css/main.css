@@ -346,15 +346,24 @@ form > *:last-child {
   max-width: var(--max-width);
 }
 .nav-header {
+  /* width: 10rem; */
   height: 6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+ 
 }
-.nav-header img {
+.logo {
   width: 200px;
-  margin-left: -6px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--primary-500);
+  text-shadow: var( --shadow-1);
+  /* margin-left: -6px; */
   margin-bottom: -9px;
+}
+.logo span {
+  color: var(--primary-1100);
 }
 .nav-btn {
   padding: 0.15rem 0.75rem;
@@ -405,7 +414,7 @@ form > *:last-child {
   }
   .nav-header {
     padding: 0;
-    margin-right: 2rem;
+    /* margin-right: 10rem; */
     height: auto;
   }
 

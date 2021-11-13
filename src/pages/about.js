@@ -5,20 +5,28 @@ import { Link, graphql } from "gatsby"
 import RecipesList from "../components/RecipesList"
 import SEO from "../components/SEO"
 
-const About = ({data:{allContentfulRecipe:{nodes:recipes}}}) => {
+const About = ({
+  data: {
+    allContentfulRecipe: { nodes: recipes },
+  },
+}) => {
   return (
     <Layout>
-      <SEO title="About"/>
+      <SEO title="About" />
       <main className="page">
         <section className="about-page">
           <article>
-            <h2>Nutrient Data and Diet Tagging for Recipes</h2>
-            <p>Search for food by keyword, food name or UPC/Barcode</p>
+            <h2>How to learn to cook?</h2>
             <p>
-              Sourcing of nutrition facts for a given food, including: macro and
-              micro nutrients, allergen labels, lifestyle and health labels
+              Easy-to-make recipes for beginners will help out if you're just
+              getting started with homemade recipes.
             </p>
-            <p>Search for food by given nutrient quantity for 28 nutrients</p>
+            <p>
+              A detailed step-by-step description of the cooking technology will
+              help you not only quickly and without any problems prepare the
+              dish you like, but also easily master the basics of cooking.
+            </p>
+            <p>Search for recipes and cook</p>
             <Link to="/contact" className="btn">
               contact
             </Link>
@@ -42,8 +50,8 @@ const About = ({data:{allContentfulRecipe:{nodes:recipes}}}) => {
 export const query = graphql`
   {
     allContentfulRecipe(
-      sort: {fields: title, order: ASC}
-      filter: {featured: {eq: true}}
+      sort: { fields: title, order: ASC }
+      filter: { featured: { eq: true } }
     ) {
       nodes {
         id
