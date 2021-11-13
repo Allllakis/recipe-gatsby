@@ -15,16 +15,12 @@ const Contact = ({
       <main className="page">
         <section className="contact-page">
           <article className="contact-info">
-            <h3>Want To Get In Touch?</h3>
+            <h3>Contact Us</h3>
             <p>
-              Four dollar toast biodiesel plaid salvia actually pickled banjo
-              bespoke mlkshk intelligentsia edison bulb synth.
+            Feel free to contact us any time
             </p>
-            <p>Cardigan prism bicycle rights put a bird on it deep v.</p>
-            <p>
-              Hashtag swag health goth air plant, raclette listicle fingerstache
-              cold-pressed fanny pack bicycle rights cardigan poke.
-            </p>
+            <p>We will get back to you as soon as we can</p>
+            
           </article>
           <article>
             <form
