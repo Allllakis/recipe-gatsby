@@ -8,7 +8,9 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="nav-center">
         <div className="nav-header">
-          <Link to="/" className="logo">Easy<span>Cook</span></Link>
+          <Link to="/" className="logo">
+            Easy<span>Cook</span>
+          </Link>
           <button className="nav-btn" onClick={() => setShow(!show)}>
             <FiAlignJustify />
           </button>
@@ -16,6 +18,9 @@ const Navbar = () => {
         <div className={show ? "nav-links show-links" : "nav-links"}>
           <Link to="/" className="nav-link" activeClassName="active-link">
             home
+          </Link>
+          <Link to="/about" className="nav-link" activeClassName="active-link">
+            about
           </Link>
           <Link
             to="/recipes"
@@ -27,9 +32,7 @@ const Navbar = () => {
           <Link to="/tags" className="nav-link" activeClassName="active-link">
             tags
           </Link>
-          <Link to="/about" className="nav-link" activeClassName="active-link">
-            about
-          </Link>
+
           <div className=" nav-link contact-link">
             <Link to="/contact" className="btn">
               contact

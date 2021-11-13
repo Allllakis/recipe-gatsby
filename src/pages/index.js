@@ -20,8 +20,8 @@ export default function Home() {
           />
           <div className="hero-container">
           <div className="hero-text">
-            <h1>Food and Recipes</h1>
-            <h4>structured recipes and healthy food</h4>
+            <h1>How to learn to cook?</h1>
+            <h4>Easy-to-make recipes for beginners</h4>
           </div>
           </div>
         </header>
