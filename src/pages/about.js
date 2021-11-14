@@ -26,7 +26,7 @@ const About = ({
               help you not only quickly and without any problems prepare the
               dish you like, but also easily master the basics of cooking.
             </p>
-            <p>Search for recipes and cook</p>
+            <p>Search for recipes and cook.</p>
             <Link to="/contact" className="btn">
               contact
             </Link>
@@ -36,10 +36,12 @@ const About = ({
             alt="pripering foods"
             className="about-img"
             placeholder="blurred"
+            layout="constrained"
+            as="div"
           />
         </section>
         <section className="featured-recipes">
-          <h5>Look at This Awesomesouce!</h5>
+          <h5>Look and check how tasty and easy!</h5>
           <RecipesList recipes={recipes} />
         </section>
       </main>
