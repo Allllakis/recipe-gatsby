@@ -170,8 +170,14 @@ textarea {
   border-radius: var(--borderRadius);
   background: var(--grey-0);
   border-color: transparent;
+  /* border: 1px solid var(--primary-500); */
   border: 1px solid var(--grey-300);
   resize: none;
+  /* border-style: none; */
+}
+
+textarea:focus {
+ border-color: var(--primary-500);
 }
 .form-row {
   margin-bottom: 1rem;
